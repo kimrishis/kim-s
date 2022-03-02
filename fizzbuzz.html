@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fizzbuzz</title>
+</head>
+<body>
+    
+    <ol id="orderlist">
+        
+    </ol>
+
+<script>
+    let list = []
+    for (let index = 1; index <= 100; index++) {
+        var tolist = ""
+        var hasThreeDivisible = isThreeDivisible(index)
+
+        if (hasThreeDivisible) {
+            tolist = "fizz"
+        }
+
+        var hasFiveDivisible = isFiveDivisible(index)
+        if (hasFiveDivisible) {
+            tolist = tolist + "buzz"
+        }
+
+        if (hasThreeDivisible == false && hasFiveDivisible == false) {
+            tolist = index
+        }
+
+        var li = document.createElement("li");
+        li.innerHTML = tolist
+        document.getElementById('orderlist').appendChild(li)
+
+        list.push(tolist)
+        console.log(list);
+    }
+
+    function isThreeDivisible(number) {
+        const tail = number % 3;
+        if (tail === 0) {
+            return true
+        }
+        return false
+    }
+
+    function isFiveDivisible(number) {
+        const tail = number % 5;
+        if (tail === 0) {
+            return true
+        }
+        return false
+    }
+ 
+</script>
+</body>
+</html>
