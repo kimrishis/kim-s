@@ -7,7 +7,7 @@ var backgrounddia = '#e2cd9f'
 var backgroundtarde = '#b9846f'
 var backgroundnoite = '#515154'
 var bodystyle = document.body.style 
-msg.innerHTML = 'agora são $(hora) horas.'
+msg.innerHTML = `agora são ${hora} horas.`
 if (hora >= 0 && hora < 12 ) {
     //Bom dia!
     img.src = 'dia.jpg'
@@ -21,5 +21,6 @@ bodystyle.background = backgroundtarde
    // BOA NOITE!!!!
    img.src = 'noite.jpg' 
 bodystyle.background = backgroundnoite  
+
 }
 } 
