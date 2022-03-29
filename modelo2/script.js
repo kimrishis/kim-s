@@ -16,11 +16,11 @@ if (hora >= 0 && hora < 12 ) {
 } else if (hora >= 12 && hora <= 18) {
     //Boa tarde!
     img.src = 'tarde.jpg'
-bodystyle.background = backgroundtarde
+    bodystyle.background = backgroundtarde
 } else {
    // BOA NOITE!!!!
    img.src = 'noite.jpg' 
-bodystyle.background = backgroundnoite  
+   bodystyle.background = backgroundnoite  
 
 }
 } 
