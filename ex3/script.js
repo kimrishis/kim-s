@@ -28,12 +28,16 @@ function verificar() {
         }else if (fsex[1].checked) {genero = 'mulher'
             if (idade >=0 && idade < 10){
             // criança
+            img.setAttribute('src', 'bb-m.jpg')
         }    else if (idade >= 10 && idade < 21){
             //jovem
+            img.setAttribute('src', 'menina-criança.jpg')
         }    else if (idade < 50){
             // adulto
+            img.setAttribute('src', 'mulher-adulta.jpg')
         }    else {
             //idoso
+            img.setAttribute('src', 'mulher-velha.jpg')
         }
     
     }
