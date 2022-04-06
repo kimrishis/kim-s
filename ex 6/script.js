@@ -1,4 +1,4 @@
-let num = document.querySelector('imput#fnum')
+let num = document.querySelector('#fnum')
 let lista = document.querySelector('select#flista')
 let res = document.querySelector('div#res')
 let valores = []
@@ -10,11 +10,12 @@ function isnumero(n) {
      return false
  }
 }
-function inlista(n, l) { 
-if (lista.indexOF(Number(n)) != -1) {
+function inlista(n, l) {
+ 
+if (l.indexOf(Number(n)) != -1) {
     return true
 } else {
-        return false
+    return false
     }
 }
 
