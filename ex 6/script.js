@@ -24,7 +24,7 @@ function adicionar() {
     if(isnumero(num.value) && !inlista(num.value, valores)){
         valores.push(Number(num.value))
         let item = document.createElement('option')
-        item.innerText = `valor ${num.value} adicionado`
+        item.text = `valor ${num.value} adicionado`
         lista.appendChild(item)
         
     } else { 
