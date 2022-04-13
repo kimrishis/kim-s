@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <style>
+      body {
+          padding: 10px;
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <h1>
+       Escolha seu pokemon
+   </h1>
+   <i onclick="escolha(1)" class="nes-charmander"></i>
+   <i onclick="escolha(2)" class="nes-bulbasaur"></i>
+   <i onclick="escolha(3)" class="nes-squirtle"></i>
+   <br>
+   <br>
+   <p id="resultado" class="nes-balloon from-left nes-pointer">
+    
+  </p>
+   <br>
+    <i id="player"></i>
+    <i class="nes-pokeball"></i>
+    <i id="cpu"></i>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
