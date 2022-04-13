@@ -1,7 +1,9 @@
+var progress= 0 
 function escolha(id){
     // preencher com a escolha do player
    
-    var randomcpu= Math.floor(Math.random() * (3 - 1 + 1) + 1)
+ 
+   var randomcpu= Math.floor(Math.random() * (3 - 1 + 1) + 1)
     if (randomcpu==1) {
         document.getElementById("cpu").className= 'nes-charmander'
     }
@@ -36,12 +38,18 @@ if (id==1 && randomcpu==1){
     }
     if (id==1 && randomcpu==2){
     document.getElementById("resultado").innerText="vitoria"
+    progress= progress+10 
+    document.getElementById("pr").value= progress
     }
     if (id==3 && randomcpu==1){
     document.getElementById("resultado").innerText="vitoria"
+    progress= progress+10 
+    document.getElementById("pr").value= progress
     }    
     if (id==2 && randomcpu==3){
     document.getElementById("resultado").innerText="vitoria"
+    progress= progress+10 
+    document.getElementById("pr").value= progress
     }
     if (id==1 && randomcpu==3){
     document.getElementById("resultado").innerText="derrota"
@@ -52,6 +60,10 @@ if (id==1 && randomcpu==1){
     if (id==3 && randomcpu==2){
     document.getElementById("resultado").innerText="derrota"
     }
+if (progress==100) {
+document.getElementById("trofeu").style = "" 
+
+}
 
 }
 
